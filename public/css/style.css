@@ -186,3 +186,37 @@ span.orange{
     color: #FF9B45;
     transition: color 500ms;
 }
+/* --------------------------------------- SECTION 1 --------------------------------------- */
+section:nth-child(odd){
+    background: #EBF1FC;
+    
+}
+.s1-container{
+    display: grid;
+    justify-items: center;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 5fr 5fr;
+    padding: 5vw;
+}
+.tabs{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+.tabs > button{
+    padding: 1.5vw;
+    border: none;
+    box-shadow: 0 0 4px #e6e0e0;
+}
+.titles{
+    padding: 2vw;
+    padding-top: 0;
+}
+.titles h4 {
+    margin-top: 0;
+}
+.s1-img img{
+    width: 15vw;
+    height: 15vw;
+}
