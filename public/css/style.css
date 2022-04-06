@@ -50,7 +50,7 @@ nav {
 body > header > nav > div > div > p{
     margin: 0;
 }
-ul{
+nav ul{
     display: flex;
     list-style: none;
     font-size: large;
@@ -222,3 +222,58 @@ section:nth-child(odd){
 }
 
 /* --------------------------------------- SECTION 2 --------------------------------------- */
+section:nth-of-type(2){
+    width: 60%;
+    margin: 0 auto;
+}
+.s2-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vw;
+}
+.s2-container img {
+    width: 20vw;
+    padding-top: 3vw;
+}
+.media-list{
+    position: relative;
+}
+.media-list h4{
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 0.3vw;
+}
+.media-list p{
+    margin-top: 0;
+    margin-bottom: 1vw;
+}
+.media-list > ul{
+    list-style: none;
+}
+.media-list > ul>*{
+    margin: 0;
+    padding: 0;
+}
+.media-list > ul> li > *{
+    margin: 0;
+    padding: 0;
+    
+}
+.media-list > ul> li > h5{
+    font-weight: 800;
+    font-size: medium;
+    margin-bottom: 0.2vw;
+}
+.media-list > ul> li > p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5vw;
+    font-size: large;
+}
+.list-icon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    gap: 1.5vw;
+}
