@@ -1,1 +1,147 @@
-/* --------------------------------------- START CSS --------------------------------------- */
+/* --------------------------------------- START CSS 
+--------------------------------------- */
+body{
+    padding: 0;
+    margin: 0;
+}
+/* --------------------------------------- HEADER --------------------------------------- */
+header{
+
+    color: #DFE2E7;
+    background-color: rgba(255, 100, 100, 0.4);
+    background: url('/public/img/glo-empire-state-building-usa.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    z-index: 1;
+}
+header::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.2vw;
+    height: 86.4vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+nav {
+    position: fixed;
+    display: grid;  
+    width: 100%;
+    justify-items: center;  
+    background: rgb(52,58,64);
+    color:#F9F8FA;
+    z-index: 100;
+    padding: 0.3vw ;
+}
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    align-items: center;
+}
+.brand{
+    font-size: xx-large;
+}
+body > header > nav > div > div > p{
+    margin: 0;
+}
+ul{
+    display: flex;
+    list-style: none;
+    font-size: large;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    height: fit-content;
+    gap: 2vw;
+}
+.nav-container li:not(li>button){
+    padding: 0.5vw;
+}
+button.orange{
+    background-color: #FF9B45;
+    border: 1px solid #FF9B45;
+    border: 3px;
+    padding: 0.5vw;
+}
+.header-content{
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,1fr);
+    padding: 8vw;
+    gap: 4vw;
+}
+.presentation{
+    z-index: 3;
+}
+.presentation,.presentation > *{
+    /* border: 1px solid white; */
+}
+.presentation h3,.presentation h4{
+    font-size:xx-large;
+    font-weight: 400;
+}
+.presentation h3{
+    margin-bottom: 1vw;
+}
+.presentation h4{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+header hr{
+    background: #DFE2E7;
+    width: 10%;
+    height: 0.1vw;
+    margin-left: 0;
+    border: 2px solid #DFE2E7;
+    border-radius: 10px;
+}
+.presentation p{
+    font-size: large;
+}
+.presentation button {
+    border: 1px solid #DFE2E7;
+    padding: 0.6vw 1vw;
+    background: transparent;
+    color: #DFE2E7;
+}
+.try{
+    background: #F9F8FA;
+    border-radius: 3px;
+    z-index: 3;
+}
+.try div{
+    display: flex;
+    background: #F9F8FA;
+    font-size: large;
+    color: black;
+    justify-content: center;
+    padding: 0.5vw 0;
+    margin-bottom: 0.5vw;
+    border-radius: 3px 3px 0 0;
+}
+.try form{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background: #F9F8FA;
+    height: fit-content;
+    border-radius: 0 0 3px 3px;
+    
+}
+.try form input{
+    margin: 0.5vw 1vw;
+    padding: 0.5vw;
+    outline-color: #FF9B45;
+}
+.try button {
+    margin-top: 2vw;
+    padding: 1vw;
+    border-radius: 0 0 3px 3px;
+}
+span.orange{
+    color: #FF9B45;
+}
+
