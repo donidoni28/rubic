@@ -1,12 +1,16 @@
 /* --------------------------------------- START CSS 
 --------------------------------------- */
+:root{
+    --borderW:1px solid white;
+    --borderB:1px solid black;
+}
 body{
     padding: 0;
     margin: 0;
 }
 /* --------------------------------------- HEADER --------------------------------------- */
 header{
-
+    position: relative;
     color: #DFE2E7;
     background-color: rgba(255, 100, 100, 0.4);
     background: url('/public/img/glo-empire-state-building-usa.webp');
@@ -21,7 +25,7 @@ header::after{
     top: 0;
     left: 0;
     width: 99.2vw;
-    height: 86.4vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
 }
@@ -146,3 +150,39 @@ span.orange{
 }
 
 /* --------------------------------------- SCOCIAL MEDIA --------------------------------------- */
+.social-media-container{
+    box-shadow: -2px -13px 20px 0px black;
+    width: 100%;
+}
+.social-media{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background: #FFFFFF;
+    
+}
+.social-txt h5{
+    font-size:large;
+    margin: 0;
+    margin-top: 1vw;
+}
+.social-txt p{
+    margin-top: 0.1vw;
+    padding-right: 2vw;
+}
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2vw;
+}
+.social-icon i{
+    color: #ADB5BD;
+    font-size: xxx-large;
+    transition: color 500ms;
+}
+.social-icon i:hover{
+    color: #FF9B45;
+    transition: color 500ms;
+}
