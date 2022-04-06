@@ -208,6 +208,11 @@ section:nth-child(odd){
     padding: 1.5vw;
     border: none;
     box-shadow: 0 0 4px #e6e0e0;
+    transition: box-shadow 500ms;
+}
+.tabs > button:hover{
+    box-shadow: 0 0 4px #cac4c4;;
+    transition: box-shadow 500ms;
 }
 .titles{
     padding: 2vw;
@@ -215,6 +220,14 @@ section:nth-child(odd){
 }
 .titles h4 {
     margin-top: 0;
+}
+.title-1>button{
+    box-shadow: 0 0 4px #8a8686;
+    transition: box-shadow 500ms;
+}
+.title-1>button:hover{
+    box-shadow: 0 0 4px #2d2d2d;
+    transition: box-shadow 500ms;
 }
 .s1-img img{
     width: 15vw;
@@ -294,3 +307,50 @@ section:nth-of-type(2){
     width: 20vw;
     padding-top: 3vw;
 }
+/* --------------------------------------- SECTION 3 --------------------------------------- */
+.s4-container{
+    display: grid;
+    padding: 5vw;
+    width: 60%;
+    margin: 0 auto;
+    font-size: xx-large;
+}
+.header-s4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-s4 h5{
+    margin-bottom: 0.5vw;
+}
+.header-s4 hr{
+    margin: 0;
+    width: 10vh;
+    border: 2px solid #FF9B45;
+    border-radius: 5px;
+}
+.header-s4 p{
+    margin-top: 0.5vw;
+    font-size: medium;
+    padding-bottom: 3vw;
+}
+.s4-container  > .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.s4-container  > .cards h5{
+    margin: 1vw;
+    text-align: center;
+    margin-bottom: 0;
+}
+.s4-container  > .cards p{
+    margin-top: 0;
+    font-size: medium;
+    padding: 1vw;
+}
+.cards i{
+    display: flex;
+    justify-content: center;
+    color: #FF9B45;
+}
+/* --------------------------------------- SECTION 4 --------------------------------------- */
