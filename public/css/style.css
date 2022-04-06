@@ -278,3 +278,19 @@ section:nth-of-type(2){
     gap: 1.5vw;
 }
 /* --------------------------------------- SECTION 3 --------------------------------------- */
+.s3-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vw;
+    width: 60%;
+    margin: 0 auto;
+}
+.s3-img{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.s3-container img {
+    width: 20vw;
+    padding-top: 3vw;
+}
