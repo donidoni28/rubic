@@ -135,7 +135,7 @@ header hr{
     border-radius: 0 0 3px 3px;
     
 }
-.try form input{
+.try > form > input{
     margin: 0.5vw 1vw;
     padding: 0.5vw;
     outline-color: #FF9B45;
@@ -515,7 +515,7 @@ p.orange{
     margin-right: 1vw;
 }
 /* --------------------------------------- SECTION 7 --------------------------------------- */
-.s7-container{
+section:nth-of-type(7){
     position: relative;
     color: #DFE2E7;
     background-color: rgba(255, 100, 100, 0.4);
@@ -526,7 +526,7 @@ p.orange{
     z-index: 1;
     padding: 5vw;
 }
-.s7-container::before{
+section:nth-of-type(7)::before{
     content: "";
     position: absolute;
     top: 0;
@@ -540,10 +540,66 @@ p.orange{
     display: absolute;
     width: 60%;
     margin: 0 auto;
-    z-index: 3000 !important;
+    z-index: 3;
     color: #FFFFFF;
 }
 .box-container hr.orange{
     border-color: #FF9B45;
 }
-
+/* --------------------------------------- SECTION 8 --------------------------------------- */
+.s8-container{
+    display: grid;
+    padding: 5vw;
+    width: 60%;
+    margin: 0 auto;
+    font-size: xx-large;
+}
+.header-s8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-s8 h5{
+    margin-bottom: 0.5vw;
+}
+.header-s8 hr{
+    margin: 0;
+    width: 10vh;
+    border: 2px solid #FF9B45;
+    border-radius: 5px;
+}
+.header-s8 p{
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+    font-size: medium;
+    padding-bottom: 3vw;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1vw;
+    grid-template-areas: 
+        'i-1 ta-1'
+        'i-2 ta-1'
+        'i-3 ta-1'
+    ;
+}
+.form-container > input:nth-of-type(1){
+    grid-area: i-1;
+    outline-color: #FF9B45;
+}
+.form-container > input:nth-of-type(2){
+    grid-area: i-2;
+    outline-color: #FF9B45;
+}
+.form-container > input:nth-of-type(3){
+    grid-area: i-3;
+    outline-color: #FF9B45;
+}
+.form-container > textarea{
+    grid-area: ta-1;
+    outline-color: #FF9B45;
+}
+.s8-container button {
+    width: 100%;
+}
