@@ -307,7 +307,7 @@ section:nth-of-type(2){
     width: 20vw;
     padding-top: 3vw;
 }
-/* --------------------------------------- SECTION 3 --------------------------------------- */
+/* --------------------------------------- SECTION 4 --------------------------------------- */
 .s4-container{
     display: grid;
     padding: 5vw;
@@ -353,7 +353,7 @@ section:nth-of-type(2){
     justify-content: center;
     color: #FF9B45;
 }
-/* --------------------------------------- SECTION 4 --------------------------------------- */
+/* --------------------------------------- SECTION 5 --------------------------------------- */
 .s5-container{
     display: grid;
     padding: 5vw;
@@ -457,7 +457,7 @@ p.orange{
     font-size: medium;
     /* padding: 0vw; */
 }
-/* --------------------------------------- SECTION 5 --------------------------------------- */
+/* --------------------------------------- SECTION 6 --------------------------------------- */
 .s6-container{
     display: grid;
     padding: 5vw;
@@ -514,4 +514,36 @@ p.orange{
     height: 4vw;
     margin-right: 1vw;
 }
-/* --------------------------------------- SECTION 6 --------------------------------------- */
+/* --------------------------------------- SECTION 7 --------------------------------------- */
+.s7-container{
+    position: relative;
+    color: #DFE2E7;
+    background-color: rgba(255, 100, 100, 0.4);
+    background: url('/public/img/glo-empire-state-building-usa.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    z-index: 1;
+    padding: 5vw;
+}
+.s7-container::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99.2vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+.box-container{
+    display: absolute;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 3000 !important;
+    color: #FFFFFF;
+}
+.box-container hr.orange{
+    border-color: #FF9B45;
+}
+
