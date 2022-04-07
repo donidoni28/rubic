@@ -19,6 +19,11 @@
     .list-icon{
         gap: 3vw;
     }
+    .try form {
+        height: 100%;
+        justify-content: space-between
+    }
+    
 }
 @media screen and (max-width: 768px) {
     .try{
@@ -29,6 +34,9 @@
     }
     .user{
         font-size: small;
+    }
+    .tabs{
+        justify-content: center
     }
 }
 @media screen and (max-width: 425px) {
@@ -44,6 +52,10 @@
     .social-media-container .social-icon{
         display: flex;
         flex-direction: column;
+        
+    }
+    .social-media-container .social-icon i{
+        font-size: medium;
     }
     .header-content{
         display: grid;
@@ -52,12 +64,18 @@
     .presentation{
         font-size: xx-small;
     }
+    .s3-container{
+
+        grid-template-columns: 1fr;
+        gap: 3vw 0;
+    }
     .s5-container .cards{
         grid-template-columns: 1fr;
         gap: 3vw 0;
     }
-    .tabs{
-        justify-content: center
+    
+    .s6-container{
+        margin: 4vw;
     }
     .s6-container .cards{
         grid-template-columns: 1fr;

@@ -465,13 +465,7 @@ p.orange{
     /* padding: 0vw; */
 }
 /* --------------------------------------- SECTION 6 --------------------------------------- */
-.s6-container{
-    display: grid;
-    padding: 5vw;
-    width: 60%;
-    margin: 0 auto;
-    font-size: xx-large;
-}
+
 .header-s6{
     display: flex;
     flex-direction: column;
@@ -523,6 +517,9 @@ p.orange{
 }
 /* --------------------------------------- SECTION 7 --------------------------------------- */
 section:nth-of-type(7){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     color: #DFE2E7;
     background-color: rgba(255, 100, 100, 0.4);
@@ -530,7 +527,7 @@ section:nth-of-type(7){
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-    z-index: 1;
+    z-index: 6 !important;
     padding: 5vw;
 }
 section:nth-of-type(7)::before{
@@ -541,17 +538,30 @@ section:nth-of-type(7)::before{
     width: 99.2vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    z-index: -7 !important;
+}
+.s7-container hr{
+    margin: 0;
+    width: 10vh;
+    border: 2px solid #FF9B45;
+    border-radius: 5px;
 }
 .box-container{
     display: absolute;
     width: 60%;
     margin: 0 auto;
-    z-index: 3;
+    z-index: 8 !important;
     color: #FFFFFF;
 }
 .box-container hr.orange{
     border-color: #FF9B45;
+}
+.s7-container button {
+    border: 1px solid #DFE2E7;
+    padding: 0.6vw 1vw;
+    background: transparent;
+    color: #DFE2E7;
+    transition: background-color 500ms,color 500ms;
 }
 /* --------------------------------------- SECTION 8 --------------------------------------- */
 .s8-container{
