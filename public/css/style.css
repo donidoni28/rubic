@@ -404,6 +404,15 @@ div.cards > div.card3 > hr{
 }
 .s5-container  > .cards>div{
     /* border: 1px solid black; */
+    transform: scale(1.0);
+    box-shadow: 0px 0px 7px #d2c7c7;
+    transition: transform 500ms,box-shadow 500ms;
+}
+.s5-container  > .cards>div:hover{
+    /* border: 1px solid black; */
+    transform: scale(1.01);
+    box-shadow: 0px 0px 7px #787171;
+    transition: transform 500ms,box-shadow 500ms;
 }
 .s5-container  > .cards h5{
     margin: 0;
@@ -449,3 +458,59 @@ p.orange{
     /* padding: 0vw; */
 }
 /* --------------------------------------- SECTION 5 --------------------------------------- */
+.s6-container{
+    display: grid;
+    padding: 5vw;
+    width: 60%;
+    margin: 0 auto;
+    font-size: xx-large;
+}
+.header-s6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-s6 h5{
+    margin-bottom: 0.5vw;
+}
+.header-s6 hr{
+    margin: 0;
+    width: 10vh;
+    border: 2px solid #FF9B45;
+    border-radius: 5px;
+}
+.header-s6 p{
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+    font-size: medium;
+    padding-bottom: 3vw;
+}
+.message{
+    padding: 1vw;
+    background: #EFF0F3;
+    border-radius: 5px;
+}
+.message p{
+    /* padding: 2vw 0; */
+    font-size: medium;
+}
+.s6-container  > .cards{
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1vw;
+    
+}
+.user{
+    display: flex;
+    padding: 0.7vw;
+    font-size: medium;
+}
+.user p {
+    text-align: start;
+}
+.user img {
+    width: 4vw;
+    height: 4vw;
+    margin-right: 1vw;
+}
