@@ -354,3 +354,97 @@ section:nth-of-type(2){
     color: #FF9B45;
 }
 /* --------------------------------------- SECTION 4 --------------------------------------- */
+.s5-container{
+    display: grid;
+    padding: 5vw;
+    width: 60%;
+    margin: 0 auto;
+    font-size: xx-large;
+}
+.header-s5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-s5 h5{
+    margin-bottom: 0.5vw;
+}
+.header-s5 hr{
+    margin: 0;
+    width: 10vh;
+    border: 2px solid #FF9B45;
+    border-radius: 5px;
+}
+.header-s5 p{
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+    font-size: medium;
+    padding-bottom: 3vw;
+}
+.s5-container  > .cards{
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1vw;
+    
+}
+.heading{
+    background: #343A40;
+    color: #DFE2E7;
+}
+.argent{
+    font-size: xx-large;
+}
+div.cards > div.card1 > div:nth-child(2) > hr.orange,
+div.cards > div.card3 > hr{
+    margin-top: 0;
+}
+.cards p {
+    text-align: center;
+}
+.s5-container  > .cards>div{
+    /* border: 1px solid black; */
+}
+.s5-container  > .cards h5{
+    margin: 0;
+    text-align: center;
+    /* margin-bottom: 0; */
+}
+.box p{
+    padding: 1vw;
+}
+.box p:last-of-type{
+    margin-bottom: 0;
+}
+.heading h5{
+    padding: 1vw;
+}
+.heading div{
+    padding: 1vw;
+}
+.heading > hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-color: #474C55;
+}
+.heading > hr.orange {
+    border: 2px solid #FF9B45;
+
+}
+p.orange{
+    background: #FF9B45;
+    padding: 0.5vw !important;
+    margin-bottom: 0;
+    color: #F9F8FA ;
+}
+.box > hr {
+    border: #F5F7F9;
+}
+.box{
+    background-color: white;
+}
+.s5-container  > .cards p{
+    margin-top: 0;
+    font-size: medium;
+    /* padding: 0vw; */
+}
