@@ -17,6 +17,7 @@ header{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+    overflow: hidden;
     z-index: 1;
 }
 header::after{
@@ -24,7 +25,7 @@ header::after{
     position: absolute;
     top: 0;
     left: 0;
-    width: 99.2vw;
+    width: 100vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 2;
@@ -110,6 +111,12 @@ header hr{
     padding: 0.6vw 1vw;
     background: transparent;
     color: #DFE2E7;
+    transition: background-color 500ms,color 500ms;
+}
+.presentation button:hover {
+    background-color: #DFE2E7;
+    color: black;
+    transition: background-color 500ms,color 500ms;
 }
 .try{
     background: #F9F8FA;
@@ -172,17 +179,17 @@ span.orange{
     margin-top: 0.1vw;
     padding-right: 2vw;
 }
-.social-icon {
+.social-media-container .social-icon {
     display: flex;
     justify-content: space-between;
     margin-left: 2vw;
 }
-.social-icon i{
+.social-media-container .social-icon i{
     color: #ADB5BD;
     font-size: xxx-large;
     transition: color 500ms;
 }
-.social-icon i:hover{
+.social-media-container .social-icon i:hover{
     color: #FF9B45;
     transition: color 500ms;
 }
@@ -604,3 +611,23 @@ section:nth-of-type(7)::before{
     width: 100%;
 }
 /* --------------------------------------- FOOTER --------------------------------------- */
+footer{
+    background-color: #343A40;
+    padding: 1vw;
+}
+.footer-container{
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    justify-items: center;
+}
+.footer-container .social-icon i{
+    padding: 1vh;
+    color: #ADB5BD;
+    transition: color 500ms;
+}
+.footer-container .social-icon i:hover{
+    color: #FF9B45;
+    transition: color 500ms;
+}
